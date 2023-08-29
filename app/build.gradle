@@ -13,13 +13,13 @@ android {
       storePassword keystoreProperties['storePassword']
     }
   }
-  compileSdkVersion 30
+  compileSdk 33
   defaultConfig {
     applicationId "com.ideafactorybd.learnfrench"
-    minSdkVersion 21
-    targetSdkVersion 30
-    versionCode 2
-    versionName "2.0.2"
+    minSdk 21
+    targetSdk 33
+    versionCode 3
+    versionName "2.0.3"
     signingConfig signingConfigs.release
   }
   buildTypes {
@@ -33,8 +33,8 @@ android {
 
 dependencies {
   implementation fileTree(dir: 'libs', include: ['*.jar'])
-  implementation 'androidx.appcompat:appcompat:1.3.1'
+  implementation 'androidx.appcompat:appcompat:1.6.1'
   implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-  implementation 'com.google.android.material:material:1.4.0'
-  implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+  implementation 'com.google.android.material:material:1.9.0'
+  implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 }
